@@ -132,6 +132,10 @@ img {
   align-items: start;
 }
 
+.intro-copy {
+  transform: translateY(calc(-1 * clamp(3px, 0.8vw, 8px)));
+}
+
 .eyebrow,
 .section-kicker {
   margin: 0 0 14px;
@@ -144,18 +148,26 @@ img {
 
 .hero h1 {
   margin: 0;
-  font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.1rem);
   font-weight: 700;
-  line-height: 1.22;
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .candidate-title {
-  margin: 8px 0 12px;
-  color: var(--accent);
+  margin: 8px 0 4px;
+  color: var(--ink);
   font-size: clamp(0.95rem, 1.4vw, 1.08rem);
   font-weight: 700;
+}
+
+.institution-line {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: clamp(0.98rem, 1.35vw, 1.08rem);
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .location-line {
@@ -197,7 +209,7 @@ img {
 
 .hero-subtitle {
   max-width: 720px;
-  margin: 0 auto;
+  margin: -8px auto 0;
   color: var(--ink);
   font-size: clamp(1rem, 1.6vw, 1.12rem);
   margin-left: 0;
